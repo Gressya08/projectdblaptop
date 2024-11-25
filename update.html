@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block konten %}
+    <h1>INPUT DATA LAPTOP</h1>
+    <form action="/aksiupdate" method="post" >
+        <input type="hidden" name="id" placeholder="Enter nama" value="{{ value[0] }}" >
+        <input type="varchar" name="merk" placeholder="Enter merk" value="{{ value[1] }}" ><br>
+        <input type="text" name="tipe" placeholder="Enter tipe" value="{{ value[2] }}"><br>
+        <input type="text" name="i_core" placeholder="Enter i core" value="{{ value[3] }}"><br>
+        <input type="text" name="harga" placeholder="Enter harga" value="{{ value[4] }}"><br>
+        <button type="submit">KIRIM</button>
+    </form>
+{% endblock %}

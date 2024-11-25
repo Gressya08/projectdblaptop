@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block konten %}
+    <table border="1">
+        <tr>
+            <th>MERK</th>
+            <th>TIPE</th>
+            <th>ICORE</th>
+            <th>HARGA</th>
+            <th>OPSI</th>
+        </tr>
+
+        {% for result in data %}
+        <tr>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>{{ result[4] }}</td>
+            <td>{{ result[5] }}</td>
+            <td> <a href="/update/{{ result[0] }}">UPDATE</a> - <a href="/hapus/{{ result[0] }}">DELETE</a> </td>
+        </tr>
+        {% endfor %}
+
+
+    </table>
+{% endblock %}

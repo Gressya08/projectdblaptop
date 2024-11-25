@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block konten %}
+    <h1>INPUT DATA LAPTOP</h1>
+    <form action="/simpan" method="post" >
+        <input type="varchar" name="merk" placeholder="Enter merk" ><br>
+        <input type="text" name="tipe" placeholder="Enter tipe"><br>
+        <input type="text" name="icore" placeholder="Enter icore"><br>
+        <input type="text" name="harga" placeholder="Enter harga"><br>
+        <button type="submit">KIRIM</button>
+    </form>
+{% endblock %}
